@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout>
+  <main class="container">
+    <h2>Let's learn Astro!</h2>
+    <div class="card">
+      <h4>Why?</h4>
+      <hr class="seperator"/>
+      <p>Astro is a static site generator, like Gastby or Hugo. But Astro has some features that seperate it from the from the rest, namely JavaScript is stripped from the output (converted to raw HTML) and components won't load until inside of viewport</p>
+      <p>Basically Astro is fast as shit</p>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .container {
+    padding:3em 2em 0 2em;
+  }
+  .card {
+    padding:.1em .5em .15em .5em;
+    border-radius:15px;
+    background-color:white;
+  }
+  h2 {
+    text-align:center;
+  }
+  .seperator {
+    background-color:rosybrown;
+  }
+</style>
