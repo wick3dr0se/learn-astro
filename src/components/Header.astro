@@ -1,19 +1,23 @@
----;
-const items = ["About", "Home"];
 ---
-<div class="header"> 
+import Nav from './Nav.astro';
+---
+
+<header> 
   <h1 class="title">Learn Astro</h1>
-</div>
+  <Nav/>
+<header>
 
 <style>
-  .header {
+  header {
     position:fixed;
     top:0;
     height:3em;
     width:100%;
-    background-color:rosybrown;
+    background-color:#9999ff;
   }
   .title {
+    z-index:1;
+    position:absolute;
     display:inline-block;
     padding-left:.25em;
     line-height:.1em;
